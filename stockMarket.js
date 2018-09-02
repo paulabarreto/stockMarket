@@ -33,17 +33,24 @@ let minVal = lowestNum(array);
 
 //compare with highest of higher index and store
 function maxAfterMin(minVal, array){
+  let arrayForComparison = [];
+  let newArray = [];
   for(let i = 0; i < array.length; i++){
     if(array[i] === minVal){
-      let newArray = [];
+      var minArray = [];
       for(let j = i; i < array.length; i++){
-        newArray.push(array[j]);
+        minArray.push(array[j]);
       }
-      var maxVal = highestNum(newArray);
+      for(let k = 0; k < i - 1; k++){
+        newArray.push(array[k]);
+      }
+      var maxVal = highestNum(minArray);
       var diff = maxVal - minVal;
     }
   }
-  return diff;
+  arrayForComparison.push(diff);
+  let newLow = lowestNum(newArray);
+  return newLow;
 }
 
 
