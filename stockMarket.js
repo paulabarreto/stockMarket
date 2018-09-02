@@ -5,9 +5,25 @@
 // bought the stock at $24 and sold it at $40, a profit of $16 was made and this is
 // the largest profit that could be made. If no profit could have been made, return -1.
 
+const array = [45, 24, 35, 31, 40, 38, 11];
+
 //Find the lowest number
 
+function lowestNum(array){
+  var min = array[0];
+  for(let i = 1; i < array.length; i++){
+    if(min > array[i]){
+      min = array[i];
+    }
+  }
+  return min;
+}
+
+console.log(lowestNum(array));
 //compare with highest of higher index and store in an  array
+// function compare(lowestNum(array)){
+//
+// }
 
 //Repeat until all there are no values left
 
