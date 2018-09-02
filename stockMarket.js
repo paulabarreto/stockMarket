@@ -19,12 +19,32 @@ function lowestNum(array){
   return min;
 }
 
-console.log(lowestNum(array));
-//compare with highest of higher index and store in an  array
-// function compare(lowestNum(array)){
-//
-// }
+function highestNum(array){
+  var max = array[0];
+  for(let i = 1; i < array.length; i++){
+    if(max < array[i]){
+      max = array[i];
+    }
+  }
+  return max;
+}
 
-//Repeat until all there are no values left
+let minVal = lowestNum(array);
 
-//get higher value in the array
+//compare with highest of higher index and store
+function maxAfterMin(minVal, array){
+  for(let i = 0; i < array.length; i++){
+    if(array[i] === minVal){
+      let newArray = [];
+      for(let j = i; i < array.length; i++){
+        newArray.push(array[j]);
+      }
+      var maxVal = highestNum(newArray);
+      var diff = maxVal - minVal;
+    }
+  }
+  return diff;
+}
+
+
+console.log(maxAfterMin(minVal, array));
