@@ -52,7 +52,8 @@ function maxAfterMin(array, arrayForComparison){
   if(newArray.length > 1){
     maxAfterMin(newArray, arrayForComparison);
   }
-  return arrayForComparison;
+  let result = highestNum(arrayForComparison);
+  return result;
 }
 
 
