@@ -1,0 +1,23 @@
+{
+  "name": "stockmarket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stockMarket.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulabarreto/stockMarket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulabarreto/stockMarket/issues"
+  },
+  "homepage": "https://github.com/paulabarreto/stockMarket#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
